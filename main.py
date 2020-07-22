@@ -2,14 +2,6 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QLabel, QPushBut
 from PyQt5.QtCore import Qt
 import sys
 
-# number = 123710378120938
-#
-# for i in range(1, number + 1):
-#     # print (i)
-#     if (number % i) == 0:
-#         print (i)
-
-
 class DivisibilityUI(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -77,7 +69,6 @@ class DivisibilityModel:
         self._ui._statusbar.showMessage("Working")
         self._ui.clearLabelText()
         for i in range(2, number):
-            # print ("I(" + str(i) + ")")
             if (number % i) == 0:
                 print ("Attempting to add " + str(i))
                 self._ui.addNumberToLabel(number=i)
